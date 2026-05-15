@@ -99,7 +99,7 @@ function Footer() {
         <div className="mt-14 pt-8 border-t border-white/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
           <p>© 2026 ResumindAI. All rights reserved.</p>
 
-          <p>Built with React & Tailwind CSS</p>
+          <p>Built by Vishal Ray with React & Tailwind CSS</p>
         </div>
       </div>
     </footer>
