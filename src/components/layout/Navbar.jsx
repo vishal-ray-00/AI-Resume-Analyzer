@@ -1,12 +1,12 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ResumindLogo from "../../assets/Resumind Logo.png";
 
 function Navbar() {
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-      <nav className="bg-[#111827]/80 backdrop-blur-xl border border-white/10 rounded-full px-6 py-2 shadow-lg">
-        <div className="flex items-center gap-20">
+    <header className="fixed inset-x-0 top-6 z-50 px-4 sm:px-6">
+      <nav className="mx-auto max-w-4xl bg-white/80 backdrop-blur-2xl border border-black/5 rounded-full px-6 py-3 shadow-xl shadow-indigo-500/5">
+        <div className="flex items-center justify-between gap-3">
           {/* Logo Section */}
           <div className="flex items-center gap-3">
             <img
@@ -14,19 +14,20 @@ function Navbar() {
               src={ResumindLogo}
               alt="Resumind Logo"
             />
+
             <Link to="/">
-              <h1 className="text-2xl font-bold text-white tracking-tight">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-indigo-500 bg-clip-text text-transparent tracking-tight">
                 ResumindAI
               </h1>
             </Link>
           </div>
 
           {/* Navigation Links */}
-          <ul className="flex items-center gap-10 text-gray-300 font-medium">
+          <ul className="flex flex-wrap justify-center items-center gap-4 md:gap-10 text-sm text-slate-700 font-medium sm:justify-end">
             <li>
               <a
-                href="#"
-                className="hover:text-white transition-all duration-300"
+                href="#hero"
+                className="hover:text-black transition-all duration-300"
               >
                 Home
               </a>
@@ -35,7 +36,7 @@ function Navbar() {
             <li>
               <a
                 href="#features"
-                className="hover:text-white transition-all duration-300"
+                className="hover:text-black transition-all duration-300"
               >
                 Features
               </a>
@@ -44,7 +45,7 @@ function Navbar() {
             <li>
               <Link
                 to="/analyzer"
-                className="bg-indigo-500 hover:bg-indigo-600 text-white px-2 py-2 rounded-full transition-all duration-300 shadow-md"
+                className=" hidden sm:block bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 text-white px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-indigo-500/25 whitespace-nowrap"
               >
                 Get Started
               </Link>
